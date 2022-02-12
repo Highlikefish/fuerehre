@@ -5,6 +5,8 @@ print("hello world :)")
 i = "12345"
 print(i)
 
-# u ist eine Liste
-u = ["1", "2", "3",]
+# u ist eine liste
+u = ["1", "2", "3", ]
 print(u[2])
+
+# TODO Programmfenster oeffnen und editieren
