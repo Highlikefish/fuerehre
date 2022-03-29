@@ -5,11 +5,17 @@
 i = 1
 
 while i == 1:
-    # Anzahl der Reihen r
-    r = int(input("Anzahl gewünschter Reihen: "))
-    # Rechnung Gaußsche Summenformel
-    K = int((r * (r + 1)) / 2)
-    # break while
-    i = 0
+    try:
+        # Anzahl der Reihen r
+        r = int(input("Anzahl gewünschter Reihen: "))
+        # Rechnung Gaußsche Summenformel
+        K = int((r * (r + 1)) / 2)
+    # Eingabe überprüfen
+    except ValueError:
+        print("Das ist keine ganze Zahl, probiers nochmal.")
+        continue
+    else:
+        # break while
+        i = 0
 else:
     print("Anzahl benötigter Kronenkorken:", K)
