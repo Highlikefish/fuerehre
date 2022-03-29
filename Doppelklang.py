@@ -8,7 +8,7 @@ while i == 1:
     # Anzahl der Reihen r
     r = int(input("Anzahl gewünschter Reihen: "))
     # Rechnung Gaußsche Summenformel
-    K = (r * (r + 1)) / 2
+    K = int((r * (r + 1)) / 2)
     # break while
     i = 0
 else:
